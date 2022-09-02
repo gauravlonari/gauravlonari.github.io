@@ -1,0 +1,37 @@
+<html>
+  <head><title>Gaurav Lonari Portfolio</title></head>
+<body>
+  <div style="
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    width: 100%;">
+    <h1 id="hello">Welcome!</h1>
+  </div>
+<script>
+  function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+  }
+  function invertHex(hex) {
+    return (Number(`0x1${hex}`) ^ 0xFFFFFF).toString(16).substr(1).toUpperCase();
+  }
+  function setHelloColor(){
+    clr=getRandomColor();
+    document.querySelector("#hello").style.color=clr;
+    document.querySelector("body").style.backgroundColor=invertHex(clr);
+      setTimeout(setHelloColor,1000);
+  }
+  window.addEventListener("load",function(){
+    setTimeout(setHelloColor,1000);
+  });
+  
+</script>
+</body>
+</html>
