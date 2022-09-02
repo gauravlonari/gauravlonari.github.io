@@ -9,9 +9,9 @@
     flex-flow:wrap column;
     height: 100%;
     width: 100%;">
-    <h1 id="hello">Welcome!</h1>
-    <a href="/TextUtility/#/">TextUtility</a>
-    <a href="/NewNews/#/">NewNews</a>
+    <h1 class="text">Welcome!</h1>
+    <a class="text" href="/TextUtility/#/">TextUtility</a>
+    <a class="text" href="/NewNews/#/">NewNews</a>
   </div>
 <script>
   function getRandomColor() {
@@ -27,12 +27,12 @@
   }
   function setHelloColor(){
     clr=getRandomColor();
-    document.querySelector("#hello").style.color=clr;
+    document.querySelectorAll(".text")forEach((ele)=>{ele.style.color=clr});
     document.querySelector("body").style.backgroundColor=invertHex(clr);
       setTimeout(setHelloColor,1000);
   }
   window.addEventListener("load",function(){
-    setTimeout(setHelloColor,1000);
+    setTimeout(setHelloColor,1500);
   });
   
 </script>
