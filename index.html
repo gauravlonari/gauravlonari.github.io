@@ -27,7 +27,7 @@
   }
   function setHelloColor(){
     clr=getRandomColor();
-    document.querySelectorAll(".text")forEach((ele)=>{ele.style.color=clr});
+    document.querySelectorAll(".text").forEach((ele)=>{ele.style.color=clr});
     document.querySelector("body").style.backgroundColor=invertHex(clr);
       setTimeout(setHelloColor,1000);
   }
