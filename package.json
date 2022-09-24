@@ -1,7 +1,7 @@
 {
   "name": "gauravlonari.github.io",
   "version": "0.1.0",
-  "homepage": "https://gauravlonari.github.io/gauravlonari.github.io",
+  "homepage": "https://gauravlonari.github.io/",
   "private": true,
   "dependencies": {
     "@headlessui/react": "^1.7.0",
