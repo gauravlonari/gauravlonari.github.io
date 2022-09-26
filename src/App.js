@@ -1,10 +1,13 @@
 import './App.css';
-import Info from './components/Info';
+import Demo from './components/Demo';
+// import QuickLinks from './components/QuickLinks';
 
 function App() {
   return (
-    <Info/>
+    <>
+    {/* <QuickLinks/> */}
+    <Demo></Demo>
+    </>
   );
 }
-
 export default App;

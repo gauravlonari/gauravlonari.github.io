@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect,useState } from 'react';
 
-export default function Info() {
+export default function QuickLinks() {
   
   const getRandomColor=()=>{
       let letters = "0123456789ABCDEF";
