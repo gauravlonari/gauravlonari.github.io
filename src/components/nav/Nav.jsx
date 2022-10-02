@@ -4,19 +4,18 @@ import {AiOutlineUser,AiOutlineMessage} from 'react-icons/ai'
 import {BsGearWideConnected} from 'react-icons/bs'
 import {SiGooglescholar} from 'react-icons/si'
 import './nav.css'
-import { useState } from 'react'
 
-export default function Nav() {
-  const [activeNav, setActiveNav] = useState('#');
-  
+export default function Nav(props) {
+
   return (
     <nav>
-      <a href="#" onClick={()=>{setActiveNav('#')}} className={activeNav==='#'?'active':''}><BiHome/></a>
-      <a href="#about"  onClick={()=>{setActiveNav('#about')}} className={activeNav==='#about'?'active':''}><AiOutlineUser/></a>
-      <a href="#education"  onClick={()=>{setActiveNav('#education')}} className={activeNav==='#education'?'active':''}><SiGooglescholar/></a>
-      <a href="#experience"  onClick={()=>{setActiveNav('#experience')}} className={activeNav==='#experience'?'active':''}><BsGearWideConnected/></a>
-      <a href="#testimonials"  onClick={()=>{setActiveNav('#testimonials')}} className={activeNav==='#testimonials'?'active':''}><BiMessageSquareDetail/></a>
-      <a href="#contact"  onClick={()=>{setActiveNav('#contact')}} className={activeNav==='#contact'?'active':''}><AiOutlineMessage/></a>
+      {/* eslint-disable-next-line  */}
+      <a href="#" onClick={()=>{props.nav.setActiveNav('#')}} className={props.nav.activeNav==='#'?'active':''}><BiHome/></a>
+      <a href="#about"  onClick={()=>{props.nav.setActiveNav('#about')}} className={props.nav.activeNav==='#about'?'active':''}><AiOutlineUser/></a>
+      <a href="#education"  onClick={()=>{props.nav.setActiveNav('#education')}} className={props.nav.activeNav==='#education'?'active':''}><SiGooglescholar/></a>
+      <a href="#experience"  onClick={()=>{props.nav.setActiveNav('#experience')}} className={props.nav.activeNav==='#experience' || props.nav.activeNav==='#portfolio' ?'active':''}><BsGearWideConnected/></a>
+      <a href="#testimonials"  onClick={()=>{props.nav.setActiveNav('#testimonials')}} className={props.nav.activeNav==='#testimonials'?'active':''}><BiMessageSquareDetail/></a>
+      <a href="#contact"  onClick={()=>{props.nav.setActiveNav('#contact')}} className={props.nav.activeNav==='#contact' || props.nav.activeNav==='#footer'?'active':''}><AiOutlineMessage/></a>
     </nav>
   )
 }

@@ -64,8 +64,8 @@ h1 {
 }
 
 section {
-  margin-top: 8rem;
-  height: 100vh;
+  margin-top: 3rem;
+  min-height: 100vh;
 }
 
 section > h2,
@@ -125,7 +125,12 @@ img{
     }
 
     section{
-        margin-top: 6rem;
+        margin-top: 3rem;
+    }
+}
+@media screen and (max-width:1000px){
+    section{
+      margin-top: 3rem;
     }
 }
 
@@ -136,7 +141,7 @@ img{
     }
 
     section{
-        margin-bottom: 2rem;
+        margin-top: 1.5rem;
     }
     .btn{
       padding: 0.25rem 1rem;
