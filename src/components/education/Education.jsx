@@ -10,7 +10,7 @@ export default function Education() {
   return (
     <section id="education">
         <h5>Where I Learnt This</h5>
-        <h2>My Qualifications</h2>
+        <h2>Qualifications</h2>
       <div className="container qualification_container">
         
         <article className='qualification'>
