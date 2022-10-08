@@ -1,14 +1,14 @@
 import React from 'react'
 import './about.css'
 import dp2 from '../../assets/Profile1.jpg'
-import {FiUsers,FiAward} from 'react-icons/fi'
-import {VscFolderLibrary} from 'react-icons/vsc'
-
+import {FaAndroid} from 'react-icons/fa'
+import {BsCodeSlash} from 'react-icons/bs'
+import {MdWorkOutline} from 'react-icons/md'
 
 export default function About() {
   return (
     <section id="about">
-      <h5>Get To Know</h5>
+      <h5>My Introduction</h5>
       <h2>About Me</h2>
       <div className="container about_container">
         <div className="about_me">
@@ -19,24 +19,28 @@ export default function About() {
         <div className="about_content">
           <div className="about_cards">
             <article className='about_card'>
-              <FiAward className='about_icon'/>
-              <h5>Experience</h5>
-              <small>3+ Years Working</small>
+              <BsCodeSlash className='about_icon'/>
+              <h5>Web Developer</h5>
+              <small>MERN Stack</small>
             </article>
             <article className='about_card'>
-              <FiUsers className='about_icon'/>
-              <h5>Clients</h5>
-              <small>200 Clients Worldwide</small>
+              <FaAndroid className='about_icon'/>
+              <h5>Android Developer</h5>
+              <small>Java</small>
             </article>
             <article className='about_card'>
-              <VscFolderLibrary className='about_icon'/>
-              <h5>Projects</h5>
-              <small>80+ Completed</small>
+              <MdWorkOutline className='about_icon'/>
+              <h5>Fresher Student</h5>
+              <small>VIIT' 24</small>
             </article>
           </div>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam minima dolorem impedit doloribus eveniet laborum unde reiciendis earum aliquid inventore voluptates nemo sapiente dolores quis non ad, harum at magnam.
-          </p>
+          <ul>
+            <li>Making my debut into Web Development, I am <strong>Gaurav Lonari</strong>, being passionate learner who tries to explore things all the way to the roots.</li>
+            <li><strong>Problem solving</strong> and <strong>building</strong> new stuff are some of my hobbies. </li>
+            <li>On the extra-curricular side, I do <strong>social work</strong> being the part of NSS, VIIT and <strong>connect with the students</strong> of institute being a part of  I2IC Council.</li>
+            {/* <li>Eat - Code - Workout - Sleep - Repeat</li> */}
+            <li>Explore - Adapt - Improve</li>
+          </ul>
           <a href="#contact" className='btn btn-primary'>Let's Talk</a>
         </div>
       </div>
