@@ -18,6 +18,7 @@ export default function Certifications() {
     },
   ]
   
+  // eslint-disable-next-line
   const swiper = new Swiper(".swiper", {
     modules: [Navigation, Pagination],
     loop: true,

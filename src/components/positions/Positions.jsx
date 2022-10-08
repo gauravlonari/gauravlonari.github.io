@@ -21,7 +21,7 @@ export default function Positions() {
 			date: "July 2022 - Present"
 		},
 		{
-			organization: "National Service Scheme(NSS), VIIT",
+			organization: "National Service Scheme (NSS), VIIT",
 			role: "Unnat Bharat Abhiyaan Joint Head",
 			date: "Aug 2022 - Present"
 		},
