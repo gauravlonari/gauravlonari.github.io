@@ -1,6 +1,13 @@
 import React from 'react'
 import './projects.css'
 import elar from '../../assets/elar.png'
+import minibis from '../../assets/minibis_logo.png'
+import sahyadriSafar from '../../assets/sahyadriSafar.png'
+import newNews from '../../assets/newNews.png'
+import textUtility from '../../assets/textUtility.png'
+import portfolio from '../../assets/portfolio.png'
+import investorz from '../../assets/investorz.png'
+import noteskeeper from '../../assets/noteskeeper.png'
 import {BsCodeSlash} from 'react-icons/bs'
 export default function Projects() {
 
@@ -15,7 +22,7 @@ export default function Projects() {
       live:"https://github.com/gauravlonari/ELAR/releases/"
     },
     {
-      image:elar,
+      image:minibis,
       title:"Minibis",
       description:"Minibis or Mini Business is an Android app build for small scale businesses to work on. Integrated with Firebase to store and load of Users and Products",
       tools:"Android Studio, Java, Firebase",
@@ -24,7 +31,7 @@ export default function Projects() {
       live:"https://github.com/gauravlonari/Minibis/releases/"
     },
     {
-      image:elar,
+      image:sahyadriSafar,
       title:"Sahyadri Safar",
       description:"Sahyadri Safar is a trek and tour booking site which emphasis trips to various glamorous parts of Sahyadri.",
       tools:"HTML, CSS, Vanilla JS",
@@ -33,7 +40,7 @@ export default function Projects() {
       live:"/"
     },
     {
-      image:elar,
+      image:textUtility,
       title:"TextUtility",
       description:"Text Utility is a utility software used to manipulate your text in the way you want. Enter the text and functions are available to you.",
       tools:"ReactJS, NodeJS, Bootstrap",
@@ -42,7 +49,7 @@ export default function Projects() {
       live:"http://gauravlonari.github.io/TextUtility"
     },
     {
-      image:elar,
+      image:newNews,
       title:"NewNews",
       description:"NewNews is a new News platform made to keep you updated on current affairs from each and everything like politics, sports, events, weather, etc.",
       tools:"ReactJS, NodeJS, Bootstrap, NewsAPI",
@@ -51,7 +58,7 @@ export default function Projects() {
       live:"http://gauravlonari.github.io/NewNews"
     },
     {
-      image:elar,
+      image:portfolio,
       title:"Portfolio",
       description:"Portfolio of Gaurav Lonari. This Repository include source code for the website you are currently browsing.",
       tools:"React JS, CSS, NodeJS",
@@ -60,7 +67,7 @@ export default function Projects() {
       live:"#"
     },
     {
-      image:elar,
+      image:investorz,
       title:"Investorz",
       description:"A stock market learning application displaying various investment options with valid data from API",
       tools:"Android Studio, Java",
@@ -69,10 +76,10 @@ export default function Projects() {
       live:""
     },
     {
-      image:elar,
+      image:noteskeeper,
       title:"NotesKeeper",
       description:"A Database integrated Notes Management website made with PHP and Python using Django.",
-      tools:"PHP, Python, Django",
+      tools:"PHP, Python, Django, MySQL",
       github:"https://github.com/gauravlonari/NotesKeeper",
       liveEnabled:false,
       live:""
