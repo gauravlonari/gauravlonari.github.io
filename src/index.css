@@ -127,7 +127,7 @@ img{
     object-fit: cover;
   }
 .hidden{
-  display:none;
+  display:none !important;
 }
   
 /* MEDIUM DEVICES */

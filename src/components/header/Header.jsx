@@ -3,6 +3,7 @@ import CTA from './CTA'
 import './header.css'
 import dp1 from '../../assets/Profile3.png'
 import Socials from './Socials'
+import Typewriter from 'typewriter-effect';
 
 export default function Header() {
   return (
@@ -10,7 +11,16 @@ export default function Header() {
       <div className="container header_container">
         <h5>Hello I'm</h5>
         <h1>Gaurav Lonari</h1>
-        <h5 className='text-light'>Tech Geek</h5>
+        <h5 className='text-light'>
+          <Typewriter
+            options={{
+              strings: ['Computer Engineer','Social Activist','Tech Geek', 'Full Stack Web Developer','Explorer','Android Developer'],
+              autoStart: true,
+              loop: true,
+            }}
+
+          />
+        </h5>
         <CTA/>
         <Socials/>
         <div className='me'>

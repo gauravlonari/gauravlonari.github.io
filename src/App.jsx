@@ -4,7 +4,7 @@ import Education from './components/education/Education'
 import Skillset from './components/skillset/Skillset'
 import Header from './components/header/Header'
 import Nav from './components/nav/Nav'
-import Positions from './components/positons/Positions'
+import Positions from './components/positions/Positions'
 import Projects from './components/projects/Projects'
 import Certifications from './components/certifications/Certifications'
 // import Testimonials from './components/testimonials/Testimonials'
@@ -12,7 +12,6 @@ import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 
 const App = () => {
-
   const [activeNav, setActiveNav] = useState('#');
   
   useEffect(()=>{
@@ -20,7 +19,7 @@ const App = () => {
     function observerCallback(entries) {
         entries.forEach(entry => {
             if(entry.isIntersecting) {
-              setActiveNav("#"+(entry.target.tagName==="header"?(entry.target.tagName==="footer"?"contact":""):entry.target.id));
+              setActiveNav("#"+(entry.target.tagName==="header"?'': entry.target.tagName==="footer" ? "contact" : entry.target.id));
             }
         });
     };
