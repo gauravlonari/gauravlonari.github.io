@@ -68,7 +68,19 @@
     margin:2rem 0 1.6rem;
 }
 .about_content > ul li{
-    list-style-type: disclosure-closed;
+    /* list-style-type: disclosure-closed; */
+}
+.about_content > ul li:nth-child(1)::before{
+    content: '🚀 ';
+}
+.about_content > ul li:nth-child(2)::before{
+    content: '🦅 ';
+}
+.about_content > ul li:nth-child(3)::before{
+    content: '🧠 ';
+}
+.about_content > ul li:nth-child(4)::before{
+    content: '🧑🏻‍🎓 ';
 }
 
 /* MEDIUM DEVICES */

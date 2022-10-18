@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.css'
-import dp2 from '../../assets/Profile1.jpg'
+import dp2 from '../../assets/Profile4.JPG'
 import {FaAndroid} from 'react-icons/fa'
 import {BsCodeSlash} from 'react-icons/bs'
 import {MdWorkOutline} from 'react-icons/md'
@@ -35,11 +35,12 @@ export default function About() {
             </article>
           </div>
           <ul>
-            <li>Making my debut into Web Development, I am <strong>Gaurav Lonari</strong>, being passionate learner who tries to explore things all the way to the roots.</li>
-            <li><strong>Problem solving</strong> and <strong>building</strong> new stuff are some of my hobbies. </li>
-            <li>On the extra-curricular side, I do <strong>social work</strong> being the part of NSS, VIIT and <strong>connect with the students</strong> of institute being a part of  I2IC Council.</li>
+            <li>I am <strong>Gaurav Lonari</strong>, passionate learner who tries to learn things all the way to the roots.</li>
+            <li><strong>Problem solving</strong> and <strong>exploring</strong> are some of my hobbies.</li>
+            <li>Focusing on me to improve mentally as well as physically.</li>
+            <li>At the age of 20, searching for more metaphores of human life.</li>
             {/* <li>Eat - Code - Workout - Sleep - Repeat</li> */}
-            <li>Explore - Adapt - Improve</li>
+            {/* <li>Explore - Adapt - Improve</li> */}
           </ul>
           <a href="#contact" className='btn btn-primary'>Let's Talk</a>
         </div>

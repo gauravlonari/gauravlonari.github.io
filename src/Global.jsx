@@ -10,6 +10,7 @@ import Certifications from './components/certifications/Certifications'
 // import Testimonials from './components/testimonials/Testimonials'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
+import DarkMode from './components/darkmode/DarkMode'
 
 const Global = () => {
   const [activeNav, setActiveNav] = useState('#');
@@ -31,11 +32,20 @@ const Global = () => {
     });
     observer.observe(document.querySelector("header"));
     observer.observe(document.querySelector("footer"));
-    window.addEventListener("scroll",()=>{if(window.scrollY===0) setActiveNav("#");});
+    window.addEventListener("scroll",()=>{
+      if(window.scrollY===0) setActiveNav("#"); 
+      if(window.scrollY < window.innerheight){
+        document.querySelector(".darkmode_container").classList.add("hidden");
+      }
+      else{
+        document.querySelector(".darkmode_container").classList.remove("hidden");
+      }
+      });
   },[])
   return (
           <>
             <Header/>
+            <DarkMode/>
             <Nav nav={{activeNav:activeNav,setActiveNav:setActiveNav}}/>
             <About/>
             <Education/>
