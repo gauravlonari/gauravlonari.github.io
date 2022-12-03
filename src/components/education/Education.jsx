@@ -9,7 +9,7 @@ import { AiTwotoneCalendar } from 'react-icons/ai'
 export default function Education() {
   return (
     <section id="education">
-        <h5>Where I Learnt This</h5>
+        <h5>Where I have been</h5>
         <h2>Qualification</h2>
       <div className="container qualification_container">
         

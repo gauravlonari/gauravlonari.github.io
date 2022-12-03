@@ -61,7 +61,7 @@ a:has(.cta_icon){
     margin-top: 3rem;
     border-radius: 12rem 12rem 0 0;
     padding: 3.5rem 1.5rem 1rem 1.5rem;
-    z-index: -1;
+    z-index: 1;
 }
 
 .me img{

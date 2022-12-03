@@ -8,6 +8,7 @@ import textUtility from '../../assets/textUtility.png'
 import portfolio from '../../assets/portfolio.png'
 import investorz from '../../assets/investorz.png'
 import noteskeeper from '../../assets/noteskeeper.png'
+import notesanywhere from '../../assets/notesanywhere.png'
 import {BsCodeSlash} from 'react-icons/bs'
 export default function Projects() {
 
@@ -28,6 +29,15 @@ export default function Projects() {
       tools:"Android Studio, Java, Firebase",
       github:"https://github.com/gauravlonari/NewNews",
       liveEnabled:true, 
+      live:"https://github.com/gauravlonari/Minibis/releases/"
+    },
+    {
+      image:notesanywhere,
+      title:"NotesAnywhere",
+      description:"NotesAnywhere is an online notes keeping application. Save anywhere, get it available everywhere. Login or Register and get your dashboard ready.  ",
+      tools:"MERN Stack",
+      github:"https://github.com/gauravlonari/notesanywhere",
+      liveEnabled:false, 
       live:"https://github.com/gauravlonari/Minibis/releases/"
     },
     {

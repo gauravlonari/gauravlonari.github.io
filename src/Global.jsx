@@ -10,7 +10,7 @@ import Certifications from './components/certifications/Certifications'
 // import Testimonials from './components/testimonials/Testimonials'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
-import DarkMode from './components/darkmode/DarkMode'
+import Theme from './components/themes/Theme'
 
 const Global = () => {
   const [activeNav, setActiveNav] = useState('#');
@@ -18,16 +18,16 @@ const Global = () => {
   useEffect(()=>{
     var observer = new IntersectionObserver(observerCallback);
     function observerCallback(entries) {
-        entries.forEach(entry => {
-            if(entry.isIntersecting) {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) {
               setActiveNav("#"+(entry.target.tagName==="header"?'': entry.target.tagName==="footer" ? "contact" : entry.target.id));
             }
-        });
+          });
     };
-
+    
     document.querySelectorAll("section").forEach((i) => {
         if (i) {
-            observer.observe(i);
+          observer.observe(i);
         }
     });
     observer.observe(document.querySelector("header"));
@@ -40,12 +40,12 @@ const Global = () => {
       else{
         document.querySelector(".darkmode_container").classList.remove("hidden");
       }
-      });
+    });
   },[])
   return (
-          <>
+    <>
             <Header/>
-            <DarkMode/>
+            <Theme/>
             <Nav nav={{activeNav:activeNav,setActiveNav:setActiveNav}}/>
             <About/>
             <Education/>

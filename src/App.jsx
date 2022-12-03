@@ -1,20 +1,20 @@
 import React from 'react'
 import Global from './Global'
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from "react-router-dom";
-import Error404 from './components/error404/Error404'
+// import {
+//   BrowserRouter,
+//   Routes,
+//   Route,
+// } from "react-router-dom";
+// import { useEffect } from 'react';
+// import RandomColor from './components/colors/RandomColor';
 
 export default function App() {
+
+  // useEffect(()=>{
+  //   new RandomColor();
+  // },[]);
+
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route index element={<Global/>}></Route>
-        <Route path="*" element={<Error404 theme={{color:"#FAF9F6",backgroundColor:"#121212"}}/>}></Route>
-      </Routes>
-    
-    </BrowserRouter>    
+    <Global />
   )
 }

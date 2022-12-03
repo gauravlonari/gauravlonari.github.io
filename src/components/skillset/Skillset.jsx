@@ -5,7 +5,7 @@ import { BsPatchCheckFill } from "react-icons/bs";
 export default function Skillset() {
   return (
     <section id="skillset">
-      <h5>Technical Skills I Have</h5>
+      <h5>Tools I know</h5>
       <h2>Skillset</h2>
       <div className="container skillset_container">
         <div>

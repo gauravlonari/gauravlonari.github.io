@@ -1,9 +1,10 @@
 import React from 'react'
 import './about.css'
+import dp1 from '../../assets/highlight1.jpg'
 import dp2 from '../../assets/Profile4.JPG'
-import {FaAndroid} from 'react-icons/fa'
+import {TbAugmentedReality} from 'react-icons/tb'
 import {BsCodeSlash} from 'react-icons/bs'
-import {MdWorkOutline} from 'react-icons/md'
+import {MdAndroid} from 'react-icons/md'
 
 export default function About() {
   return (
@@ -13,7 +14,7 @@ export default function About() {
       <div className="container about_container">
         <div className="about_me">
           <div className="about_me-image">
-            <img src={dp2} alt="About Profile" />
+            <img src={dp1} onMouseOver={e=>{e.currentTarget.src=dp2}} onMouseOut={e=>{e.currentTarget.src=dp1}} alt="About Profile" />
           </div>
         </div>
         <div className="about_content">
@@ -24,21 +25,21 @@ export default function About() {
               <small>MERN Stack</small>
             </article>
             <article className='about_card'>
-              <FaAndroid className='about_icon'/>
-              <h5>Android Developer</h5>
-              <small>Java</small>
+              <TbAugmentedReality className='about_icon'/>
+              <h5>AR VR Enthusiast</h5>
+              <small>Unity Engine</small>
             </article>
             <article className='about_card'>
-              <MdWorkOutline className='about_icon'/>
-              <h5>Fresher Student</h5>
-              <small>VIIT' 24</small>
+              <MdAndroid className='about_icon'/>
+              <h5>Android Developer</h5>
+              <small>Java</small>
             </article>
           </div>
           <ul>
             <li>I am <strong>Gaurav Lonari</strong>, passionate learner who tries to learn things all the way to the roots.</li>
-            <li><strong>Problem solving</strong> and <strong>exploring</strong> are some of my hobbies.</li>
-            <li>Focusing on me to improve mentally as well as physically.</li>
-            <li>At the age of 20, searching for more metaphores of human life.</li>
+            <li><strong>Problem solving</strong> and <strong>exploring</strong> are one of my hobbies.</li>
+            <li>Focused to improve mentally and physically.</li>
+            <li>At the age of 20, searching for equality in javascript.</li>
             {/* <li>Eat - Code - Workout - Sleep - Repeat</li> */}
             {/* <li>Explore - Adapt - Improve</li> */}
           </ul>
