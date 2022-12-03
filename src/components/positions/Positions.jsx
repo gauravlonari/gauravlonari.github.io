@@ -30,6 +30,16 @@ export default function Positions() {
 			role: "Event Coordinator at Flash 2.0",
 			date: "Jan 2020 - Mar 2020"
 		},
+		{
+			organization: "FreeQuery",
+			role: "Blogger Blog",
+			date: "Dec 2017 - Jan 2019"
+		},
+		{
+			organization: "Freeq",
+			role: "Youtube Channel",
+			date: "Nov 2014 - Mar 2019"
+		},
 	]
 
 	return (
