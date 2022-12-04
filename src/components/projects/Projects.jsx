@@ -37,8 +37,8 @@ export default function Projects() {
       description:"NotesAnywhere is an online notes keeping application. Save anywhere, get it available everywhere. Login or Register and get your dashboard ready.  ",
       tools:"MERN Stack",
       github:"https://github.com/gauravlonari/notesanywhere",
-      liveEnabled:false, 
-      live:"https://github.com/gauravlonari/Minibis/releases/"
+      liveEnabled:true, 
+      live:"https://gauravlonari.github.io/NotesAnywhere/#/"
     },
     {
       image:sahyadriSafar,
