@@ -22,15 +22,15 @@ export default function Projects() {
       liveEnabled:true,
       live:"https://github.com/gauravlonari/ELAR/releases/"
     },
-    {
-      image:minibis,
-      title:"Minibis",
-      description:"Minibis or Mini Business is an Android app build for small scale businesses to work on. Integrated with Firebase to store and load of Users and Products",
-      tools:"Android Studio, Java, Firebase",
-      github:"https://github.com/gauravlonari/NewNews",
-      liveEnabled:true, 
-      live:"https://github.com/gauravlonari/Minibis/releases/"
-    },
+    // {
+    //   image:minibis,
+    //   title:"Minibis",
+    //   description:"Minibis or Mini Business is an Android app build for small scale businesses to work on. Integrated with Firebase to store and load of Users and Products",
+    //   tools:"Android Studio, Java, Firebase",
+    //   github:"https://github.com/gauravlonari/NewNews",
+    //   liveEnabled:true, 
+    //   live:"https://github.com/gauravlonari/Minibis/releases/"
+    // },
     {
       image:notesanywhere,
       title:"NotesAnywhere",
