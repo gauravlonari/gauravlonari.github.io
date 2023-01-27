@@ -10,11 +10,19 @@ export default function Certifications() {
   const certificationData=[
     {
       logo:"https://cdn.qwiklabs.com/KxYnffjiyPuh7QOen04Gtn09Y4B1Cb3YlWkwOYzCObc%3D",
-      title:"Google Cloud Facilitator Program 2022",
+      title:"Milestone 3 of Google Cloud Facilitator Program 2022",
       by:"Qwiklabs",
       date:"June 2022",
       description:"The GoogleCloudReady Facilitator program is an opportunity to kickstart career in cloud and get hands on practice on Google Cloud. Learn & practice concepts like computing, application development, big data & machine learning using cloud",
       url:"https://www.cloudskillsboost.google/public_profiles/5ff6691f-2911-4267-a2eb-213a77d95ffd"
+    },
+    {
+      logo:"https://media.licdn.com/dms/image/sync/C5627AQEc817K2s_3Xw/articleshare-shrink_1280_800/0/1672939783202?e=1673546400&v=beta&t=bYesJGtiBc7fw8r-sduck-QFcwE13dU8nCtP2vMUHq4",
+      title:"5⭐ Java Badge",
+      by:"HackerRank",
+      date:"January 2023",
+      description:"The 5 stars badge on HackerRank for Java indicates that the user has earned the maximum number of stars for their Java-related challenges on the platform. To earn this badge, a user must have completed a significant number of Java challenges and consistently earned high scores on those challenges. This badge is a testament to the user's expertise and proficiency in the Java programming language.",
+      url:"https://www.hackerrank.com/gaurav_22120147"
     },
   ]
   

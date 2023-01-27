@@ -46,8 +46,8 @@ export default function Projects() {
       description:"Sahyadri Safar is a trek and tour booking site which emphasis trips to various glamorous parts of Sahyadri.",
       tools:"HTML, CSS, Vanilla JS",
       github:"https://github.com/gauravlonari/SahyadriSafar",
-      liveEnabled:false,
-      live:"/"
+      liveEnabled:true,
+      live:"https://gauravlonari.github.io/SahyadriSafar/"
     },
     {
       image:textUtility,
@@ -66,6 +66,15 @@ export default function Projects() {
       github:"https://github.com/gauravlonari/NewNews",
       liveEnabled:true,
       live:"http://gauravlonari.github.io/NewNews"
+    },
+    {
+      image:portfolio,
+      title:"Portfolio",
+      description:"Portfolio of Gaurav Lonari. This Repository include source code for the website you are currently browsing.",
+      tools:"React JS, CSS, NodeJS",
+      github:"https://github.com/gauravlonari/gauravlonari.github.io",
+      liveEnabled:true,
+      live:"#"
     },
     {
       image:portfolio,
@@ -114,7 +123,7 @@ export default function Projects() {
           </div>
           <div className="project_item_cta">
           <a href={prj.github} target="_blank" rel='noreferrer' className='btn btn-sm'>Source Code</a>
-          <a href={prj.live} target={prj.live==="#"?"_self":"_blank"} rel='noreferrer' className={`btn btn-sm btn-primary ${prj.liveEnabled?"":"hidden"}`}>Live Demo</a>
+          <a href={prj.live} target={prj.live==="#"?"_self":"_blank"} rel='noreferrer' className={`btn btn-sm btn-primary ${prj.liveEnabled?"":"hidden"}`}>Try it</a>
           </div>
         </article>
         )
