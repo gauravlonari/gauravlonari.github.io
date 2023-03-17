@@ -17,7 +17,7 @@ export default function Certifications() {
       url:"https://www.cloudskillsboost.google/public_profiles/5ff6691f-2911-4267-a2eb-213a77d95ffd"
     },
     {
-      logo:"https://media.licdn.com/dms/image/sync/C5627AQEc817K2s_3Xw/articleshare-shrink_1280_800/0/1672939783202?e=1673546400&v=beta&t=bYesJGtiBc7fw8r-sduck-QFcwE13dU8nCtP2vMUHq4",
+      logo:"https://raw.githubusercontent.com/gauravlonari/static/main/javabadge5star.jfif",
       title:"5⭐ Java Badge",
       by:"HackerRank",
       date:"January 2023",

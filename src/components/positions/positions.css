@@ -10,7 +10,7 @@
 .position_data{
     background:var(--color-bg-varient);
     padding:2rem 3rem;
-    border-radius: 2rem;
+    border-radius: 10px;
     width: 100%;
     margin-bottom: 2rem;
     border: 1px solid transparent;

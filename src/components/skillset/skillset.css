@@ -7,7 +7,7 @@
 .skillset_container > div{
     background: var(--color-bg-varient);
     padding: 2rem 3rem;
-    border-radius: 2rem;
+    border-radius: 10px;
     border:1px solid transparent;
     transition: var(--transition);
 }

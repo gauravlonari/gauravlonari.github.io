@@ -1,0 +1,43 @@
+.experience_card {
+  padding: 2rem;
+  background-color: var(--color-bg-varient);
+  border: 1px solid transparent;
+  border-radius: 10px;
+  transition: var(--transition);
+}
+.experience_card:hover {
+  background-color: transparent;
+  border-color: var(--color-primary-varient);
+}
+.experience_card .jobposition{
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 2rem;
+  /* color:var(--color-primary) */
+}
+.experience_card a.companylink{
+}
+
+.experience_card .desc{
+  margin: 0.3rem 0;
+  display: -webkit-inline-box !important;
+  display: flex;
+  /* align-items: center; */
+  gap: 0.2rem;
+}
+
+.experience_container .uparrow{
+    font-size: 5rem;
+    text-align: center;
+    width: 100%;
+    /* line-height: 4rem; */
+    color: var(--color-bg-varient);
+}
+
+.experience_card .interntools{
+  /* margin-bottom: 0.5rem; */
+    display: -webkit-inline-box !important;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}

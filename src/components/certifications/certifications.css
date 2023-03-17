@@ -18,7 +18,7 @@
 .certificate img{
     /* max-width: 27rem; */
     max-height:25rem;
-    border-radius: 2rem;
+    border-radius: 10px;
     object-fit: contain;
 }
 

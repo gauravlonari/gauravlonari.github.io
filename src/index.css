@@ -139,7 +139,7 @@ img{
   color: var(--color-primary);
   background: var(--color-bg-varient);
   display: flex;
-  border-radius: 2rem;
+  border-radius: 10px;
   font-size: 1.3rem;
   top: 2rem;
   right: 2rem;

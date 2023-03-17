@@ -11,6 +11,7 @@ import Certifications from './components/certifications/Certifications'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 import Theme from './components/themes/Theme'
+import Experience from './components/experience/Experience'
 
 const Global = () => {
   const [activeNav, setActiveNav] = useState('#');
@@ -50,6 +51,7 @@ const Global = () => {
             <About/>
             <Education/>
             <Skillset/>
+            <Experience/>
             <Positions/>
             <Projects/>
             <Certifications/>

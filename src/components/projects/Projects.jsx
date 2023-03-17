@@ -1,7 +1,7 @@
 import React from 'react'
 import './projects.css'
 import elar from '../../assets/elar.png'
-import minibis from '../../assets/minibis_logo.png'
+// import minibis from '../../assets/minibis_logo.png'
 import sahyadriSafar from '../../assets/sahyadriSafar.png'
 import newNews from '../../assets/newNews.png'
 import textUtility from '../../assets/textUtility.png'
@@ -76,15 +76,15 @@ export default function Projects() {
       liveEnabled:true,
       live:"#"
     },
-    {
-      image:portfolio,
-      title:"Portfolio",
-      description:"Portfolio of Gaurav Lonari. This Repository include source code for the website you are currently browsing.",
-      tools:"React JS, CSS, NodeJS",
-      github:"https://github.com/gauravlonari/gauravlonari.github.io",
-      liveEnabled:true,
-      live:"#"
-    },
+    // {
+    //   image:portfolio,
+    //   title:"Portfolio",
+    //   description:"Portfolio of Gaurav Lonari. This Repository include source code for the website you are currently browsing.",
+    //   tools:"React JS, CSS, NodeJS",
+    //   github:"https://github.com/gauravlonari/gauravlonari.github.io",
+    //   liveEnabled:true,
+    //   live:"#"
+    // },
     {
       image:investorz,
       title:"Investorz",
