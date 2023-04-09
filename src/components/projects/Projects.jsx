@@ -9,6 +9,7 @@ import portfolio from '../../assets/portfolio.png'
 import investorz from '../../assets/investorz.png'
 import noteskeeper from '../../assets/noteskeeper.png'
 import notesanywhere from '../../assets/notesanywhere.png'
+import freeqry from '../../assets/freeQry.png'
 import {BsCodeSlash} from 'react-icons/bs'
 export default function Projects() {
 
@@ -76,23 +77,12 @@ export default function Projects() {
       liveEnabled:true,
       live:"#"
     },
-    // {
-    //   image:portfolio,
-    //   title:"Portfolio",
-    //   description:"Portfolio of Gaurav Lonari. This Repository include source code for the website you are currently browsing.",
-    //   tools:"React JS, CSS, NodeJS",
-    //   github:"https://github.com/gauravlonari/gauravlonari.github.io",
-    //   liveEnabled:true,
-    //   live:"#"
-    // },
     {
       image:investorz,
       title:"Investorz",
       description:"A stock market learning application displaying various investment options with valid data from API",
       tools:"Android Studio, Java",
       github:"https://github.com/gauravlonari/Stock-Edge",
-      liveEnabled:false,
-      live:""
     },
     {
       image:noteskeeper,
@@ -100,8 +90,15 @@ export default function Projects() {
       description:"A Database integrated Notes Management website made with PHP and Python using Django.",
       tools:"PHP, Python, Django, MySQL",
       github:"https://github.com/gauravlonari/NotesKeeper",
-      liveEnabled:false,
-      live:""
+    },
+    {
+      image:freeqry,
+      title:"Youtube Blog",
+      description:"Personal technical blog for youtube channel. Used to make posts about youtube videos",
+      tools:"Blogger, Bootstrap, Javascript",
+      githubDisabled:true,
+      liveEnabled:true,
+      live:"https://freeqry.blogspot.com"
     },
     
   ];
@@ -122,8 +119,14 @@ export default function Projects() {
           <small>{prj.tools}</small>  
           </div>
           <div className="project_item_cta">
-          <a href={prj.github} target="_blank" rel='noreferrer' className='btn btn-sm'>Source Code</a>
-          <a href={prj.live} target={prj.live==="#"?"_self":"_blank"} rel='noreferrer' className={`btn btn-sm btn-primary ${prj.liveEnabled?"":"hidden"}`}>Try it</a>
+            {
+              !prj.githubDisabled &&
+              <a href={prj.github} target="_blank" rel='noreferrer' className='btn btn-sm'>Source Code</a>
+            }
+            {
+              prj.liveEnabled &&
+               <a href={prj.live} target={prj.live==="#"?"_self":"_blank"} rel='noreferrer' className='btn btn-sm btn-primary'>Try it</a>
+            }
           </div>
         </article>
         )
