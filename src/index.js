@@ -1,21 +1,25 @@
 import React from "react";
-import { hydrate, render } from "react-dom";
+import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./index.css";
 
+if(process.env.NODE_ENV==='production'){
+  console['log']=()=>{}
+}
+
 const rootElement = document.getElementById("root");
 if (rootElement.hasChildNodes()) {
-  hydrate(
+  ReactDOM.hydrateRoot(
+    rootElement,
     <React.StrictMode>
       <App />
-    </React.StrictMode>,
-    rootElement
+    </React.StrictMode>
   );
 } else {
-  render(
+  const root = ReactDOM.createRoot(rootElement);
+  root.render(
     <React.StrictMode>
       <App />
-    </React.StrictMode>,
-    rootElement
+    </React.StrictMode>
   );
 }

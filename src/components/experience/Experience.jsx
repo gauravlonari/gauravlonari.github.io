@@ -26,7 +26,7 @@ export default function Experience() {
           {
             experienceData.map((item,i)=>{
               return (
-                <>
+                <div key={'experienceItem'+i}>
                 { i!==0 && <BsArrowUp className="uparrow"/> }
 
                 <article className="experience_card">
@@ -43,7 +43,7 @@ export default function Experience() {
                   </div>
                   <small className="text-light position_date"><AiTwotoneCalendar />{item.duration}</small>
                 </article>
-                </>
+                </div>
               )
             })
           }

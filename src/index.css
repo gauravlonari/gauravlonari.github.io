@@ -156,6 +156,9 @@ img{
   width:25px;
   border-radius: 50%;
 }
+.swiper-wrapper{
+  align-items: center;
+}
 
 /* MEDIUM DEVICES */
 @media screen and (max-width:1024px) { 
