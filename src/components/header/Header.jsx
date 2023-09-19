@@ -23,12 +23,12 @@ export default function Header() {
                 "Social Activist",
                 "Android Developer",
                 "Tech Geek",
-                "NSS Volunteer",
                 "Full Stack Web Developer",
                 "Explorer",
                 "Youtuber",
+                "Indie Game Developer",
                 "Tweaker",
-                "Comic",
+                "Tech Enthusiast"
               ],
               autoStart: true,
               loop: true,
@@ -41,11 +41,9 @@ export default function Header() {
           className="me"
           onMouseOver={() => {
             setProfileIcon(dp2);
-            console.log("OVER");
           }}
           onMouseOut={() => {
             setProfileIcon(dp1);
-            console.log("Out");
           }}
         >
           <img src={profileIcon} alt="Front Profile" />

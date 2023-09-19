@@ -146,6 +146,7 @@ img{
   transition: var(--transition);
   z-index: 5;
   border:1px solid transparent;
+  cursor: pointer;
 }
 .darkmode_container:hover{
   border-color: var(--color-primary-varient);

@@ -1,4 +1,4 @@
-import React, { useEffect,useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 export default function DarkMode() {
 
@@ -11,10 +11,10 @@ export default function DarkMode() {
     ]
     // 1 2 
 
-    document.body.style.setProperty("--color-bg", themes[currentTheme%themes.length].bg);
-    document.body.style.setProperty("--color-primary", themes[currentTheme%themes.length].primary);
-    document.body.style.setProperty("--color-primary-varient", themes[currentTheme%themes.length].primary_varient);
-    document.body.style.setProperty("--color-bg-varient", themes[currentTheme%themes.length].bg_varient);
+    document.body.style.setProperty("--color-bg", themes[currentTheme % themes.length].bg);
+    document.body.style.setProperty("--color-primary", themes[currentTheme % themes.length].primary);
+    document.body.style.setProperty("--color-primary-varient", themes[currentTheme % themes.length].primary_varient);
+    document.body.style.setProperty("--color-bg-varient", themes[currentTheme % themes.length].bg_varient);
 
     useEffect(() => {
         if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
@@ -26,11 +26,11 @@ export default function DarkMode() {
     }, [])
 
     const handleTheme = () => {
-        setCurrentTheme(currentTheme+1);
+        setCurrentTheme(currentTheme + 1);
     }
     return (
         <div className='darkmode_container' onClick={handleTheme}>
-            <span className='circle' style={{backgroundColor:currentTheme?themes[(currentTheme+1)%themes.length].primary:""}}/>
+            <span className='circle' style={{ backgroundColor: currentTheme ? themes[(currentTheme + 1) % themes.length].primary : "" }} />
         </div>
     )
 }
