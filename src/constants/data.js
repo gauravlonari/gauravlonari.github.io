@@ -245,7 +245,7 @@ export const PROJECTS_DATA = [
     title: "Cascode Official Website",
     description: "Cascode is our IT startup which provides IT solutions to clients.",
     tools: "ReactJS, CSS, GoDaddy, Vercel",
-    github: "https://github.com/gauravlonari/NewNews",
+    github: "https://github.com/cascodeofficial/cascode-frontend",
     githubDisabled: true,
     liveEnabled: true,
     live: "http://cascode.in/"
