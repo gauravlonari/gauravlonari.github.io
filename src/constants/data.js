@@ -10,6 +10,7 @@ import noteskeeper from '../assets/noteskeeper.png';
 import portfolio from '../assets/portfolio.png';
 import sahyadriSafar from '../assets/sahyadriSafar.png';
 import textUtility from '../assets/textUtility.png';
+import Cascode from '../assets/cascode.png';
 // import minibis from '../assets/minibis_logo.png'
 
 import { AiOutlineMessage, AiOutlineUser } from 'react-icons/ai';
@@ -71,7 +72,7 @@ export const EDUCATION_DATA = [
     name: "Vishwakarma Institute of Information Technology, Pune",
     address: "Kondhwa, Pune 411048",
     board: "Autonomous Institute affilated with Savitribai Phule Pune University",
-    dateOfCompletion: "September 2024",
+    dateOfCompletion: "June 2024",
     progress: "Current CGPA 9.8"
   }
 ]
@@ -84,6 +85,14 @@ export const EXPERIENCE_DATA = [
     desc: "I have crafted web applications utilizing the MERN stack, acquiring a comprehensive grasp of the expertise and insights vital for success in this realm. My journey encompassed learning about the essential scalability and resilience prerequisites for enterprise-level applications, alongside honing my skills within a collaborative Agile team setting.",
     tools: "ReactJS, ExpressJS, NodeJS, ReduxJS, REST API, Jira, Confluence, Github, Figma",
     duration: "July 2023 - January 2024"
+  },
+  {
+    position: "Full Stack Engineer Intern",
+    company: "Caliber",
+    companyLink: "https://konnectidentity.com/",
+    desc: "By creating web applications with ReactJS on the frontend and Spring Boot and MongoDB on the backend, I acquired a comprehensive understanding of the essential skills and knowledge necessary for success in this domain. My journey involved mastering the scalability and robustness prerequisites essential for enterprise-grade applications, all while gaining valuable experience.",
+    tools: "ReactJS, Springboot, Spring JPA, MongoDB, REST API, Trello, Github, Postman",
+    duration: "April 2023 - Present"
   },
   {
     position: "Full Stack Web Developer Intern",
@@ -230,6 +239,16 @@ export const PROJECTS_DATA = [
     github: "https://github.com/gauravlonari/NewNews",
     liveEnabled: true,
     live: "http://gauravlonari.github.io/NewNews"
+  },
+  {
+    image: Cascode,
+    title: "Cascode Official Website",
+    description: "Cascode is our IT startup which provides IT solutions to clients.",
+    tools: "ReactJS, CSS, GoDaddy, Vercel",
+    github: "https://github.com/gauravlonari/NewNews",
+    githubDisabled: true,
+    liveEnabled: true,
+    live: "http://cascode.in/"
   },
   {
     image: portfolio,
