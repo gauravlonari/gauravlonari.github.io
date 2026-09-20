@@ -1,0 +1,25 @@
+---
+import { Image } from 'astro:assets';
+import portrait from '../assets/portrait-640.webp';
+import { profile } from '../data/profile';
+import ThemeToggle from './ThemeToggle';
+const sections: [string, string][] = [['#case-studies','Case studies'],['#experience','Experience'],['#skills','Skills'],['#projects','Projects'],['#contact','Contact']];
+---
+<aside class="card" aria-label="Member card">
+  <div class="card-band"><span>Loop Health</span><span>Member card</span></div>
+  <div class="card-body">
+    <Image src={portrait} alt={`Portrait of ${profile.name}`} width={112} height={140} densities={[1, 2]} quality={85} loading="eager" />
+    <div>
+      <strong>{profile.name}</strong><br />
+      <span class="muted">{profile.level}, {profile.title}</span>
+    </div>
+    <dl>
+      <dt>Member since</dt><dd>{profile.memberSince}</dd>
+      <dt>Member no.</dt><dd>{profile.memberNumber}</dd>
+      <dt>Location</dt><dd>{profile.location}</dd>
+    </dl>
+    {profile.remote && <span class="stamp">Open to remote</span>}
+    <nav aria-label="Sections"><ul>{sections.map(([href, label]) => <li><a href={href}>{label}</a></li>)}</ul></nav>
+    <ThemeToggle client:idle />
+  </div>
+</aside>

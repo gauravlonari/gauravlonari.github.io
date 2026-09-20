@@ -1,0 +1,10 @@
+---
+import { profile } from '../data/profile';
+import { links } from '../data/links';
+const social = links.filter(l => l.label !== 'Resume (PDF)');
+---
+<section id="contact" aria-labelledby="ct-h">
+  <h2 id="ct-h">Contact</h2>
+  <p>Email <a href={`mailto:${profile.email}`}>{profile.email}</a>. Open to remote roles in IST with US overlap.</p>
+  <div class="links">{social.map(l => <a href={l.href}>{l.label}</a>)}</div>
+</section>

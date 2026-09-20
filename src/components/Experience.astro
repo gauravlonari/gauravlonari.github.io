@@ -1,0 +1,14 @@
+---
+import { roles } from '../data/roles';
+---
+<section id="experience" aria-labelledby="exp-h">
+  <h2 id="exp-h">Experience</h2>
+  {roles.map(r => (
+    <article class="role">
+      <h3>{r.title}, {r.company}</h3>
+      <span class="dates">{r.start} – {r.end}</span>
+      <p class="muted">{r.location}. {r.line}</p>
+    </article>
+  ))}
+  <p style="margin-top:1rem"><a href="/resume.pdf">Full detail in the resume (PDF)</a></p>
+</section>

@@ -1,3 +1,5 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Allow: /
+Disallow: /a/
+
+Sitemap: https://gauravlonari.github.io/sitemap.xml

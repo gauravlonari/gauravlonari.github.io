@@ -1,0 +1,9 @@
+---
+import { skillGroups } from '../data/skills';
+---
+<section id="skills" aria-labelledby="sk-h">
+  <h2 id="sk-h">Skills</h2>
+  <dl class="skills">
+    {skillGroups.map(g => (<><dt>{g.name}</dt><dd>{g.items.join(', ')}</dd></>))}
+  </dl>
+</section>

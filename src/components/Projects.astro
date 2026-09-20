@@ -1,0 +1,13 @@
+---
+import { projects } from '../data/projects';
+---
+<section id="projects" aria-labelledby="pr-h">
+  <h2 id="pr-h">Projects and open source</h2>
+  {projects.map(p => (
+    <article class="role">
+      <h3><a href={p.url}>{p.name}</a></h3>
+      <span class="dates">{p.stack}</span>
+      <p>{p.summary}</p>
+    </article>
+  ))}
+</section>

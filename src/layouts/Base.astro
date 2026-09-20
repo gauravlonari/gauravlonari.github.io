@@ -1,0 +1,30 @@
+---
+import '../styles/global.css';
+import MemberCard from '../components/MemberCard.astro';
+import { profile } from '../data/profile';
+const description = `${profile.title} at ${profile.company}. React, TypeScript and Node.js on Google Cloud for a health-insurance enrolment platform covering 1M+ members.`;
+const title = `${profile.name} — ${profile.title}`;
+const { noindex = false } = Astro.props as { noindex?: boolean };
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:type" content="profile" />
+  <meta property="og:url" content="https://gauravlonari.github.io/" />
+  {noindex ? <meta name="robots" content="noindex" /> : <link rel="canonical" href="https://gauravlonari.github.io/" />}
+  <script is:inline>try{const t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch{}</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="shell">
+    <MemberCard />
+    <main id="main"><slot /></main>
+  </div>
+</body>
+</html>

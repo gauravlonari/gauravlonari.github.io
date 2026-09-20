@@ -1,0 +1,15 @@
+---
+import { getCollection, render } from 'astro:content';
+const entries = (await getCollection('caseStudies')).sort((a, b) => a.data.order - b.data.order);
+const rendered = await Promise.all(entries.map(async e => ({ e, Content: (await render(e)).Content })));
+---
+<section id="case-studies" aria-labelledby="cs-h">
+  <h2 id="cs-h">Case studies</h2>
+  {rendered.map(({ e, Content }) => (
+    <article class="case">
+      <h3>{e.data.title}</h3>
+      <p class="result">{e.data.result}</p>
+      <div class="case-body"><Content /></div>
+    </article>
+  ))}
+</section>

@@ -1,0 +1,52 @@
+@import '@fontsource-variable/bricolage-grotesque';
+:root { --paper:#F5F6F2; --ink:#101828; --ink-muted:#3D4A5C; --rule:#D9DCD3; --blue:#1F4FBF; --red:#B9411E; --card:#FFFFFF; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --paper:#101828; --ink:#F5F6F2; --ink-muted:#B7C0CE; --rule:#2A3444; --blue:#7FA3F0; --red:#E8845A; --card:#16213A; } }
+:root[data-theme="dark"] { --paper:#101828; --ink:#F5F6F2; --ink-muted:#B7C0CE; --rule:#2A3444; --blue:#7FA3F0; --red:#E8845A; --card:#16213A; }
+* { box-sizing:border-box; margin:0; }
+html { color-scheme: light dark; scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior:auto; } }
+body { background:var(--paper); color:var(--ink); font-family:'Bricolage Grotesque Variable', system-ui, sans-serif; font-size:1.0625rem; line-height:1.55; font-variant-numeric: tabular-nums; -webkit-font-smoothing:antialiased; }
+a { color:var(--blue); text-decoration-thickness:1px; text-underline-offset:.15em; }
+a:focus-visible, button:focus-visible { outline:2px solid var(--blue); outline-offset:3px; border-radius:2px; }
+.skip { position:absolute; left:-999px; top:8px; background:var(--card); padding:.5rem .75rem; z-index:10; }
+.skip:focus { left:8px; }
+.shell { display:grid; grid-template-columns: 300px minmax(0, 68ch); gap: clamp(2rem, 6vw, 6rem); max-width: 1180px; padding: clamp(1.5rem, 4vw, 4rem); margin: 0 auto; }
+main section { padding: 3.5rem 0 1rem; border-top: 1px solid var(--rule); }
+main section:first-child { border-top: 0; padding-top: 0; }
+h1 { font-weight:800; font-size: clamp(2rem, 4.6vw, 3.25rem); line-height:1.08; letter-spacing:-.015em; max-width: 22ch; }
+h2 { font-weight:600; font-size:1.5rem; line-height:1.25; margin-bottom:1.25rem; }
+h3 { font-weight:600; font-size:1.125rem; margin-bottom:.35rem; }
+p { max-width:68ch; }
+.muted { color:var(--ink-muted); }
+.links { display:flex; flex-wrap:wrap; gap:.5rem 1.5rem; margin-top:1.5rem; }
+/* member card */
+.card { position:sticky; top:clamp(1.5rem,4vw,4rem); align-self:start; background:var(--card); border:1px solid var(--rule); border-radius:12px; overflow:hidden; box-shadow:0 1px 0 var(--rule); }
+.card-band { background:var(--blue); color:var(--paper); padding:.6rem 1rem; font-weight:600; font-size:.875rem; display:flex; justify-content:space-between; }
+.card-body { padding:1rem; display:grid; gap:.75rem; }
+.card img { width:112px; height:140px; border-radius:8px; object-fit:cover; object-position:50% 12%; }
+.card dl { display:grid; grid-template-columns:auto 1fr; gap:.2rem .75rem; font-size:.9rem; }
+.card dt { color:var(--ink-muted); } .card dd { font-weight:600; }
+.stamp { display:inline-block; border:2px solid var(--red); color:var(--red); padding:.15rem .5rem; border-radius:4px; font-weight:800; font-size:.8rem; transform:rotate(-3deg); justify-self:start; }
+.card nav ul { list-style:none; padding:0; display:grid; gap:.35rem; border-top:1px solid var(--rule); padding-top:.75rem; }
+.card nav a { color:var(--ink); text-decoration:none; } .card nav a:hover { color:var(--blue); text-decoration:underline; }
+@keyframes print { from { opacity:0 } to { opacity:1 } }
+.card { animation: print 300ms ease-out both; }
+@media (prefers-reduced-motion: reduce) { .card { animation:none; } }
+/* case studies */
+.case { display:grid; gap:.75rem; padding:1.5rem 0; border-top:1px solid var(--rule); }
+.case:first-of-type { border-top:0; }
+.result { font-weight:600; }
+.case-body h4 { font-size:.95rem; font-weight:600; color:var(--ink-muted); margin:1rem 0 .25rem; }
+.case-body h4:first-child { margin-top:0; }
+/* roles */
+.role { display:grid; grid-template-columns: 1fr auto; gap:.25rem 1rem; padding:1rem 0; border-top:1px solid var(--rule); }
+.role:first-of-type { border-top:0; } .role .dates { color:var(--ink-muted); white-space:nowrap; } .role p { grid-column:1/-1; }
+/* skills */
+.skills dt { font-weight:600; margin-top:.9rem; } .skills dd { color:var(--ink-muted); }
+/* responsive */
+@media (max-width: 900px) {
+  .shell { grid-template-columns: 1fr; }
+  .card { position:static; }
+  .card nav ul { display:flex; flex-wrap:wrap; gap:.5rem 1.25rem; }
+  .role { grid-template-columns:1fr; } .role .dates { white-space:normal; }
+}

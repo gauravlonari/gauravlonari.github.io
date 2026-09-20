@@ -1,0 +1,10 @@
+---
+import { profile } from '../data/profile';
+import { links } from '../data/links';
+const primary = links.filter(l => ['Resume (PDF)', 'GitHub', 'LinkedIn'].includes(l.label));
+---
+<section aria-labelledby="hero-h">
+  <h1 id="hero-h">{profile.hero}</h1>
+  <p class="muted" style="margin-top:1rem">{profile.level} at {profile.company}, promoted from intern in 24 months.</p>
+  <div class="links">{primary.map(l => <a href={l.href}>{l.label}</a>)}</div>
+</section>
